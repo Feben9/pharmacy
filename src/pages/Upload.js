@@ -14,23 +14,23 @@ export default function Upload() {
             </aside>
             <div>
                 <form className="upload-form-container"> 
-                    <label for="drug-id">ID</label> <br />
+                    <label for="drug-id" className="label">ID</label> <br />
                     <input type="text" id="drug-id"/> <br />
-                    <label for="name">Name</label> <br />
+                    <label for="name" className="label">Name</label> <br />
                     <input type="text" id="name"/> <br />
-                    <label for="price">Price</label> <br />
+                    <label for="price" className="label">Price</label> <br />
                     <input type="number" id="price"/> <br />
-                    <label for="qty">Quantity</label> <br />
+                    <label for="qty" className="label">Quantity</label> <br />
                     <input type="number" id="qty"/> <br />
-                    <label for="desc">Description</label> <br />
+                    <label for="desc" className="label">Description</label> <br />
                     <input type="text" id="desc"/> <br />
-                    <label for="branch">Location</label> <br />
+                    <label for="branch" className="label">Location</label> <br />
                     <input type="text" id="branch"/> <br />
-                    <label for="img">Image</label> <br />
+                    <label for="img" className="label">Image</label> <br />
                     <input type="image" id="img" alt="some img"/> <br />
-                    <label for="branch">Location</label> <br />
+                    <label for="branch" className="label">Location</label> <br />
                     <input type="text" id="branch"/> <br />
-                    <label for="file">Upload</label> <br />
+                    <label for="file" className="label">Upload</label> <br />
                     <input type="file" id="file"/> <br />
                     <input type="submit" value="Add" /> <br />
                     <input type="submit" value="Update" /> <br />
