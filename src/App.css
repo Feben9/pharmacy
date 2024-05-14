@@ -47,3 +47,12 @@
   font-size: 15px;
   font-weight: 600;  
 }
+
+.upload-form-container {
+  margin: 0 auto;
+  margin-left: 30px;
+  width: 100%;
+  padding: 50px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+}

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { BrowserRouter as Link } from 'react-router-dom';
 
 export default function Login() {
     const [username, setUsername] = useState('');
@@ -9,6 +10,7 @@ export default function Login() {
         event.preventDefault();
         if (username === 'John Doe' && password === 'password') {
             alert('Login successful!');
+            <Link to="me">Hello</Link>
             setError('');
         } else {
             setError('Invalid username or password. Try again.');
