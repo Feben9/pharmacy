@@ -5,16 +5,16 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-                <NavMenu>
-                    <NavLink to="/about" activeStyle>
-                        About
-                    </NavLink>                    
+                <NavMenu>               
                     <NavLink to="/Login" activeStyle>
                         Login
                     </NavLink>
                     <NavLink to="/Upload" activeStyle>
                         Upload
                     </NavLink>
+                    <NavLink to="/Inventory" activeStyle>
+                        Inventory
+                    </NavLink> 
                     <NavLink to="/contact" activeStyle>
                         Contact Us
                     </NavLink>

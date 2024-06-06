@@ -95,3 +95,34 @@
   border: 1px solid var(--secondary-color);
   border-radius: 15px;
 }
+
+.table-container {
+  margin: 20px;
+  overflow-x: auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.table-container th {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.table-container tr:hover {
+  background-color: #2A2A31;
+  color: #EEEEF7;
+}
+
+.table-container td {
+  white-space: nowrap;
+  border: 1px solid var(--secondary-color);
+}
+
