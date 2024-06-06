@@ -18,7 +18,7 @@ export default function Login() {
     };
 
     return (
-        <div> 
+        <div className="login-container"> 
             <form className="form-container"  onSubmit={handleSubmit}>
                 <div>
                     <label for="username" className="label">Username</label> <br/>

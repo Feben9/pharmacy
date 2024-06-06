@@ -2,7 +2,7 @@ import React from "react";
  
 const About = () => {
     return (
-        <div>
+        <div className="container">
             <h1>
                 This an inventory management app.
             </h1>

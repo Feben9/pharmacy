@@ -2,7 +2,7 @@ import React from "react";
  
 const Contact = () => {
     return (
-        <div>
+        <div className="container">
             <h1>
                 Mail us on 
                 feedback@mail.org
