@@ -1,7 +1,9 @@
 import React from "react";
 import { Nav, NavLink, NavMenu } from "./NavbarElements";
  
-const Navbar = () => {
+const Navbar = ({ isAuthenticated }) => {
+    if (!isAuthenticated) return null;
+    
     return (
         <>
             <Nav>

@@ -1,16 +1,19 @@
 import React, {useState} from "react";
-import { BrowserRouter as Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-export default function Login() {
+export default function Login({ setIsAuthenticated }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
         if (username === 'John Doe' && password === 'password') {
-            alert('Login successful!');
-            <Link to="me">Hello</Link>
+            
+            setIsAuthenticated(true);
+            navigate('/upload');
+            
             setError('');
         } else {
             setError('Invalid username or password. Try again.');
