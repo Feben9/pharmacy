@@ -9,12 +9,9 @@ export default function Login({ setIsAuthenticated }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (username === 'John Doe' && password === 'password') {
-            
-            setIsAuthenticated(true);
-            navigate('/upload');
-            
-            setError('');
+        if (username === 'John Doe' && password === 'password') {            
+            setIsAuthenticated(true);           
+            navigate('/Upload');      
         } else {
             setError('Invalid username or password. Try again.');
         }

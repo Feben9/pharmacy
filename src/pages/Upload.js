@@ -1,18 +1,11 @@
 import React from 'react';
+import Navbar from "../components/Navbar";
 
 export default function Upload() {
     return (
         <div className="main-container">
             <div className="nav-container">
-                <ul>
-                    <li>DASHBOARD</li>
-                    <li>UPLOAD</li>
-                    <li>BULK UPLOAD</li>
-                    <li>INVENTORY</li>
-                    <li>CHANNELS</li>
-                    <li>REPORTS</li>
-                    <li>SECURITY</li>
-                </ul>
+               <Navbar isAuthenticated={true}/>
             </div>
             <div className="page-container">
                 <form className="upload-form-container"> 

@@ -77,16 +77,11 @@
 .main-container {
   display: flex;
   overflow: hidden;
+  height: 100vh;
 }
 
 .nav-container {
   flex: 0 0 25%;
-  overflow: hidden;
-  border: 1px solid var(--secondary-color);
-  border-radius: 15px; 
-  height: 100vh;
-  box-sizing: border-box;
-  padding: 1rem;
 }
 
 .page-container {
@@ -94,6 +89,7 @@
   overflow: hidden;
   border: 1px solid var(--secondary-color);
   border-radius: 15px;
+  height: 100vh;
 }
 
 .table-container {

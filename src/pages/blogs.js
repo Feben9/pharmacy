@@ -1,7 +1,17 @@
 import React from "react";
- 
+import Navbar from "../components/Navbar";
+
 const Blogs = () => {
-    return <h1 className="container">You can write your blogs!</h1>;
+    return (
+        <div className="main-container">
+            <div className="nav-container">
+                <Navbar isAuthenticated={true}/>
+            </div>
+            <div className="page-container">
+                <h1>You can write your blogs!</h1>
+            </div>
+        </div>
+    )
 };
  
 export default Blogs;

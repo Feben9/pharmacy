@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "../components/Navbar";
  
 const Inventory = () => {
     const [dropdownOpen, setDropdownOpen] = useState(null);
@@ -23,15 +24,7 @@ const Inventory = () => {
     return (
         <div className="main-container">
             <div className="nav-container">
-                <ul>
-                    <li>DASHBOARD</li>
-                    <li>UPLOAD</li>
-                    <li>BULK UPLOAD</li>
-                    <li>INVENTORY</li>
-                    <li>CHANNELS</li>
-                    <li>REPORTS</li>
-                    <li>SECURITY</li>
-                </ul>
+                <Navbar isAuthenticated={true}/>
             </div>
             <div className="page-container">
                 <table className="table-container">
