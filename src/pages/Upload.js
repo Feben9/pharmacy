@@ -25,7 +25,7 @@ export default function Upload() {
                     <input type="text" id="desc"/> <br />
 
                     <label for="branch" className="label">Location</label> <br />
-                    <input type="text" id="branch"/> <br />
+                    <input type="text" id="branch"/> <br /> <br /> <br />
 
                     <label for="branch" className="label">Location</label> <br />
                     <input type="text" id="branch"/> <br />
