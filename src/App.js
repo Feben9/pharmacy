@@ -4,7 +4,8 @@ import React, {useState} from 'react';
 import {
     BrowserRouter as Router,
     Routes,
-    Route
+    Route,
+    Navigate
 } from "react-router-dom";
 import Login from "./pages/Login";
 import Upload from "./pages/Upload";
@@ -19,9 +20,11 @@ function App() {
 
   return (
     <div className="App" >
-      <Router basename="/" >        
+      <Router >        
         <Routes>
-            <Route exact path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
+            <Route path="/" element={<Navigate to="/login" />} />
+
+            <Route exact path="/Login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
 
             <Route path="/upload" element={isAuthenticated ? <Upload /> : <Login />} />
 
