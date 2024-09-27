@@ -47,16 +47,15 @@ const Contact = () => {
     </div>
     
     <div className="page-container">
-      <h1>Mail us on feedback@mail.org</h1>
+      <h1 style={{padding:'20px'}}>  Contact Us</h1>
       
-      <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px' }}>
-        <h2>Contact Us</h2>
+      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
         
         {success && <p style={{ color: 'green' }}>Message sent successfully!</p>}
         {error && <p style={{ color: 'red' }}>{error}</p>}
         
         <form onSubmit={handleSubmit}>
-          <div>
+          <div style={{padding:'20px'}}>
             <label>
               Name:
               <input
@@ -65,11 +64,12 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
+                style={{padding:'5px', margin:'5px', marginLeft:'25px', width:'200px'}}
               />
             </label>
           </div>
           
-          <div>
+          <div style={{padding:'20px'}}>
             <label>
               Email:
               <input
@@ -78,11 +78,12 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+                style={{padding:'5px', margin:'5px', marginLeft:'25px', width:'200px'}}
               />
             </label>
           </div>
           
-          <div>
+          <div style={{padding:'20px'}}>
             <label>
               Message:
               <textarea
@@ -90,11 +91,12 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
+                style={{padding:'15px', marginTop:'2px', marginLeft:'5px', width:'200px'}}
               />
             </label>
           </div>
           
-          <button type="submit">Send Message</button>
+          <button type="submit" style={{padding:'5px', marginLeft:'15px', marginTop:'5px', background:'#ff456', border:'1px solid #ff456'}}>Send Message</button>
         </form>
       </div>
     </div>
