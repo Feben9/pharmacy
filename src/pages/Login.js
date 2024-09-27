@@ -9,7 +9,9 @@ export default function Login({ setIsAuthenticated }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (username === 'John Doe' && password === 'password') {            
+        if (username === 'John Doe' && password === 'password') {  
+            console.log(setIsAuthenticated); 
+          
             setIsAuthenticated(true);           
             navigate('/Upload');      
         } else {

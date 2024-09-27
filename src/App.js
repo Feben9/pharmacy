@@ -26,7 +26,7 @@ function App() {
 
             <Route exact path="/Login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
 
-            <Route path="/upload" element={isAuthenticated ? <Upload /> : <Login />} />
+            <Route path="/upload" element={isAuthenticated ? <Upload /> : <Login setIsAuthenticated={setIsAuthenticated} />} />
 
             <Route path="/contact" element={<Contact />} />
 

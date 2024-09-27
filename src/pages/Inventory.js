@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import Modal from "./Modal";
  
 const Inventory = () => {
     const [dropdownOpen, setDropdownOpen] = useState(null);
-
+ //   
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
+//
     const toggleDropdown = (id) => {
         setDropdownOpen(dropdownOpen === id ? null : id);
     };
@@ -56,7 +65,11 @@ const Inventory = () => {
                                     </button>
                                     {dropdownOpen === 1 && (
                                         <div className="dropdown-menu">
-                                            <button onClick={() => handleView(1)}>View</button>
+                                            <button onClick={handleOpenModal}>View</button>
+                                                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                                                    <h2>Popup Window Content</h2>
+                                                    <p>This is where further details are displayed.</p>
+                                                </Modal>
                                             <button onClick={() => handleEdit(1)}>Edit</button>
                                             <button onClick={() => handleDelete(1)}>Delete</button>
                                         </div>
