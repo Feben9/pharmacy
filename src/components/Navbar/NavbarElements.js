@@ -52,7 +52,6 @@ export const NavMenu = styled.div`
     display: flex;
     flex-direction: column;
     align-items: right;
-    border: 2px solid aqua;
     padding: 20px;
     @media screen and (max-width: 768px) {
         display: none;
