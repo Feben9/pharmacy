@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar"; 
 
-const SignUp = () => {
+const Branch = () => {
     return (
         <div className="main-container">
             <div className="nav-container">
@@ -14,4 +14,4 @@ const SignUp = () => {
     );
 };
  
-export default SignUp;
+export default Branch;
