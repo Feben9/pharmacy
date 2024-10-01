@@ -8,7 +8,15 @@ const Branch = () => {
                 <Navbar />
             </div>
             <div className="page-container">
-                <h1>Sign Up Successful</h1>
+                <div style={{paddingLeft: "20px"}}>
+                    <h1>Channel 1</h1>
+                </div>
+                <div style={{paddingLeft: "20px"}}>
+                    <h1>ID</h1>
+                </div>
+                <div style={{paddingLeft: "20px"}}>
+                    <button>Location</button>
+                </div>
             </div>
         </div>
     );
