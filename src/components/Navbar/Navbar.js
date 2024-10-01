@@ -13,15 +13,15 @@ const Navbar = () => {
                     <NavLink to="/Upload" activeStyle>
                         Upload
                     </NavLink>
+                    <NavLink to="/bulkupload" activeStyle>
+                        Bulk Upload
+                    </NavLink>
                     <NavLink to="/Inventory" activeStyle>
                         Inventory
                     </NavLink> 
                     <NavLink to="/contact" activeStyle>
                         Contact Us
-                    </NavLink>
-                    <NavLink to="/blogs" activeStyle>
-                        Blogs
-                    </NavLink>
+                    </NavLink>                    
                     <NavLink to="/sign-up" activeStyle>
                         Sign Up
                     </NavLink>

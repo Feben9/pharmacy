@@ -11,7 +11,7 @@ import Login from "./pages/Login";
 import Upload from "./pages/Upload";
 
 import Inventory from "./pages/Inventory";
-import Blogs from "./pages/blogs";
+import BulkUpload from "./pages/BulkUpload";
 import SignUp from "./pages/signup";
 import Contact from "./pages/contact";
 
@@ -28,9 +28,9 @@ function App() {
 
             <Route path="/upload" element={isAuthenticated ? <Upload /> : <Login setIsAuthenticated={setIsAuthenticated} />} />
 
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/bulkupload" element={<BulkUpload />} />
 
-            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/contact" element={<Contact />} />
 
             <Route path="/sign-up" element={<SignUp />} />
             

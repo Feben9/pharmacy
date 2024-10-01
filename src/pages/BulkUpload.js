@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 
-const Blogs = () => {
+const BulkUpload = () => {
     return (
         <div className="main-container">
             <div className="nav-container">
@@ -14,4 +14,4 @@ const Blogs = () => {
     )
 };
  
-export default Blogs;
+export default BulkUpload;
