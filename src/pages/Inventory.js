@@ -67,10 +67,14 @@ const Inventory = () => {
                                         <div className="dropdown-menu">
                                             <button onClick={handleOpenModal}>View</button>
                                                 <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-                                                    <h2>Popup Window Content</h2>
+                                                    <h2>New Window Content</h2>
                                                     <p>This is where further details are displayed.</p>
                                                 </Modal>
-                                            <button onClick={() => handleEdit(1)}>Edit</button>
+                                            <button onClick={handleOpenModal}>Edit</button>
+                                                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                                                    <h2>New Window Content</h2>
+                                                    <p>This is where further details are displayed.</p>
+                                                </Modal>
                                             <button onClick={() => handleDelete(1)}>Delete</button>
                                         </div>
                                     )}
