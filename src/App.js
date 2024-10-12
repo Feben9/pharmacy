@@ -14,6 +14,7 @@ import Inventory from "./pages/Inventory";
 import BulkUpload from "./pages/BulkUpload";
 import Branch from "./pages/Branch";
 import Contact from "./pages/Contact";
+import Users from "./pages/Users";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -35,6 +36,8 @@ function App() {
             <Route path="/branch" element={<Branch />} />
             
             <Route path="/inventory" element={<Inventory />} />
+
+            <Route path="/users" element={<Users />} />
 
         </Routes>
       </Router>
