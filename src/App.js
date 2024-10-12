@@ -13,8 +13,9 @@ import Upload from "./pages/Upload";
 import Inventory from "./pages/Inventory";
 import BulkUpload from "./pages/BulkUpload";
 import Branch from "./pages/Branch";
-import Contact from "./pages/Contact";
 import Users from "./pages/Users";
+import Reports from "./pages/Reports";
+import Contact from "./pages/Contact";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -38,6 +39,8 @@ function App() {
             <Route path="/inventory" element={<Inventory />} />
 
             <Route path="/users" element={<Users />} />
+
+            <Route path="/reports" element={<Reports />} />
 
         </Routes>
       </Router>

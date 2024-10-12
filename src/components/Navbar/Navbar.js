@@ -22,11 +22,14 @@ const Navbar = () => {
                     <NavLink to="/branch" activeStyle>
                         Branch
                     </NavLink>
-                    <NavLink to="/contact" activeStyle>
-                        Contact Us
-                    </NavLink> 
                     <NavLink to="/Users" activeStyle>
                         Users
+                    </NavLink> 
+                    <NavLink to="/Reports" activeStyle>
+                        Reports
+                    </NavLink> 
+                    <NavLink to="/contact" activeStyle>
+                        Contact Us
                     </NavLink> 
                 </NavMenu>
             </Nav>
