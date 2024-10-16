@@ -96,8 +96,16 @@ const Inventory = () => {
                                     </button>
                                     {dropdownOpen === 2 && (
                                         <div className="dropdown-menu">
-                                            <button onClick={() => handleView(2)}>View</button>
-                                            <button onClick={() => handleEdit(2)}>Edit</button>
+                                            <button onClick={handleOpenModal}>View</button>
+                                                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                                                    <h2>New Window Content</h2>
+                                                    <p>This is where further details are displayed.</p>
+                                                </Modal>
+                                            <button onClick={handleOpenModal}>Edit</button>
+                                                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                                                    <h2>New Window Content</h2>
+                                                    <p>This is where further details are displayed.</p>
+                                                </Modal>
                                             <button onClick={() => handleDelete(2)}>Delete</button>
                                         </div>
                                     )}
@@ -119,8 +127,16 @@ const Inventory = () => {
                                     </button>
                                     {dropdownOpen === 3 && (
                                         <div className="dropdown-menu">
-                                            <button onClick={() => handleView(3)}>View</button>
-                                            <button onClick={() => handleEdit(3)}>Edit</button>
+                                            <button onClick={handleOpenModal}>View</button>
+                                                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                                                    <h2>New Window Content</h2>
+                                                    <p>This is where further details are displayed.</p>
+                                                </Modal>
+                                            <button onClick={handleOpenModal}>Edit</button>
+                                                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                                                    <h2>New Window Content</h2>
+                                                    <p>This is where further details are displayed.</p>
+                                                </Modal>
                                             <button onClick={() => handleDelete(3)}>Delete</button>
                                         </div>
                                     )}
@@ -142,8 +158,16 @@ const Inventory = () => {
                                     </button>
                                     {dropdownOpen === 4 && (
                                         <div className="dropdown-menu">
-                                            <button onClick={() => handleView(4)}>View</button>
-                                            <button onClick={() => handleEdit(4)}>Edit</button>
+                                            <button onClick={handleOpenModal}>View</button>
+                                                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                                                    <h2>New Window Content</h2>
+                                                    <p>This is where further details are displayed.</p>
+                                                </Modal>
+                                            <button onClick={handleOpenModal}>Edit</button>
+                                                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                                                    <h2>New Window Content</h2>
+                                                    <p>This is where further details are displayed.</p>
+                                                </Modal>
                                             <button onClick={() => handleDelete(4)}>Delete</button>
                                         </div>
                                     )}
@@ -165,8 +189,16 @@ const Inventory = () => {
                                     </button>
                                     {dropdownOpen === 5 && (
                                         <div className="dropdown-menu">
-                                            <button onClick={() => handleView(5)}>View</button>
-                                            <button onClick={() => handleEdit(5)}>Edit</button>
+                                            <button onClick={handleOpenModal}>View</button>
+                                                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                                                    <h2>New Window Content</h2>
+                                                    <p>This is where further details are displayed.</p>
+                                                </Modal>
+                                            <button onClick={handleOpenModal}>Edit</button>
+                                                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                                                    <h2>New Window Content</h2>
+                                                    <p>This is where further details are displayed.</p>
+                                                </Modal>
                                             <button onClick={() => handleDelete(5)}>Delete</button>
                                         </div>
                                     )}
