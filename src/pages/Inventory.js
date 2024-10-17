@@ -69,6 +69,18 @@ const Inventory = () => {
                                                 <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
                                                     <h2>New Window Content</h2>
                                                     <p>This is where further details are displayed.</p>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Test</td>
+                                                            <td>Test</td>
+                                                            <td>Test</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Test</td>
+                                                            <td>Test</td>
+                                                            <td>Test</td>
+                                                        </tr>
+                                                    </tbody>
                                                 </Modal>
                                             <button onClick={handleOpenModal}>Edit</button>
                                                 <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
