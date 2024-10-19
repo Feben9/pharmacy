@@ -36,7 +36,7 @@ const Inventory = () => {
                 <Navbar isAuthenticated={true}/>
             </div>
             <div className="page-container">
-                <table className="table-container">
+                {/* <table className="table-container">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -218,7 +218,7 @@ const Inventory = () => {
                             </td>
                         </tr> 
                     </tbody>
-                </table>
+                </table> */}
 
     <section class="bg-gray-50 p-3 sm:p-5" style={{backgroundColor: "#212F3D"}}>
         <div class="mx-auto max-w-screen-2xl px-4 lg:px-12">

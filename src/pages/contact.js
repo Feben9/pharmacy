@@ -55,48 +55,55 @@ const Contact = () => {
         {error && <p style={{ color: 'red' }}>{error}</p>}
         
         <form onSubmit={handleSubmit}>
-          <div style={{padding:'20px'}}>
-            <label>
-              Name:
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                style={{padding:'5px', margin:'5px', marginLeft:'25px', width:'200px'}}
-              />
-            </label>
+          <div class="w-5/6">
+            <label class="block mb-2 text-xl font-medium text-gray-900 dark:text-white" for="name">
+            Name
+            </label> 
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              label="for"
+              id="name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" 
+            />
           </div>
           
-          <div style={{padding:'20px'}}>
-            <label>
-              Email:
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                style={{padding:'5px', margin:'5px', marginLeft:'25px', width:'200px'}}
-              />
-            </label>
+          <div class="w-5/6">
+            <label class="block mb-2 text-xl font-medium text-gray-900 dark:text-white" for="email">
+            Email
+            </label> 
+            <input
+              type="text"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              label="for"
+              id="email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" 
+            />
           </div>
-          
-          <div style={{padding:'20px'}}>
-            <label>
-              Message:
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                style={{padding:'15px', marginTop:'2px', marginLeft:'5px', width:'200px'}}
-              />
-            </label>
+
+          <div class="w-5/6">
+            <label class="block mb-2 text-xl font-medium text-gray-900 dark:text-white" for="message">
+            Message
+            </label> 
+            <textarea
+              type="text"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              label="for"
+              id="message"
+              class="bg-gray-50 border h-40 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" 
+            />
           </div>
-          
-          <button type="submit" style={{padding:'5px', marginLeft:'15px', marginTop:'5px', background:'#ff456', border:'1px solid #ff456'}}>Send Message</button>
+                    
+          <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-xl font-medium text-center text-white border-2 border-zinc-200 bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
+              Send Message
+          </button>
+
         </form>
       </div>
     </div>
