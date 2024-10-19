@@ -21,36 +21,36 @@ export default function Login({ setIsAuthenticated }) {
 
     return (
         <div className="login-container"> 
-            <form className="form-container"  onSubmit={handleSubmit}>
+            <form className="form-container space-y-8"  onSubmit={handleSubmit}>
                 <div>
-                    <label for="username" className="label">Username</label> <br/>
+                    <label for="username" className="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Username</label>
                     <input 
                         type="text" 
                         id="username" 
                         name="username" 
                         value={username}
-                        className="user" 
                         placeholder="John Doe" 
                         onChange={(e) => setUsername(e.target.value)}
-                    /> <br/>
+                        class="username bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" 
+                    /> 
                 </div>
                 <br />
                 <div>
-                    <label for="password" className="label">Password</label>  <br/>
+                    <label for="password" className="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Password</label>
                     <input 
                         type="password" 
                         id="password" 
                         name="password"
                         value={password} 
-                        className="user" 
                         placeholder="password" 
                         onChange={(e) => setPassword(e.target.value)}
-                    /> <br/>
+                        class="username bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" 
+                    />
                 </div>
-                <br />
                 <div>
-                    <input type="submit" value="Sign In" className="signin" />
+                    <button type="submit" value="Sign In" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 border-2 border-zinc-200 w-6/12 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">SIGN IN</button>
                 </div>
+
                 {error && <div className="error"><br /> {error}<br /></div>}                
             </form>
         </div>

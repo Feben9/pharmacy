@@ -47,14 +47,14 @@ const Contact = () => {
     </div>
     
     <div className="page-container">
-      <h1 style={{padding:'20px'}}>  Contact Us</h1>
+      <h1 class="text-xl font-large">Contact Us</h1>
       
       <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
         
         {success && <p style={{ color: 'green' }}>Message sent successfully!</p>}
         {error && <p style={{ color: 'red' }}>{error}</p>}
         
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} class="space-y-8">
           <div class="w-5/6">
             <label class="block mb-2 text-xl font-medium text-gray-900 dark:text-white" for="name">
             Name
