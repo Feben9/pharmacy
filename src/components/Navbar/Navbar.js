@@ -9,6 +9,9 @@ const Navbar = () => {
                 <NavMenu>               
                     <NavLink to="/Login" activeStyle>
                         Login
+                    </NavLink>                    
+                    <NavLink to="/Dashboard" activeStyle>
+                        Dashboard
                     </NavLink>
                     <NavLink to="/Upload" activeStyle>
                         Upload
