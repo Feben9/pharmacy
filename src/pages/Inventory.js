@@ -325,7 +325,7 @@ const Inventory = () => {
                                 <td class="px-4 py-3">branch 4</td>
                                 <td class="px-4 py-3">Ethiopia</td>
                                 <td class="px-4 py-3 flex items-center justify-end">
-                                    <button id="apple-imac-27-dropdown-button" data-dropdown-toggle="apple-imac-27-dropdown"
+                                    {/* <button id="apple-imac-27-dropdown-button" data-dropdown-toggle="apple-imac-27-dropdown"
                                     class="inline-flex items-center p-0.5 text-sm font-medium text-center text-gray-500 hover:text-gray-800 rounded-lg 
                                     focus:outline-none dark:text-gray-400 dark:hover:text-gray-100" type="button">
                                         <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -346,7 +346,26 @@ const Inventory = () => {
                                         <div class="py-1">
                                             <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
                                         </div>
+                                    </div> */}
+                                    <div class="relative inline-block text-left">
+                                        <div>
+                                            <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                                <svg class="w-5 h-5 text-gray-400 hover:text-gray-100" aria-hidden="false" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md shadow-lg ring-1 ring-gray-300 ring-opacity-3 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                                            <div class="py-1" role="none">      
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-300" role="menuitem" tabindex="-1" id="menu-item-0">View</a>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-300" role="menuitem" tabindex="-1" id="menu-item-1">Edit</a>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-300" role="menuitem" tabindex="-1" id="menu-item-2">Delete</a>
+                                            </div>
+                                        </div>
                                     </div>
+
+
                                 </td>
                             </tr>
                             <tr class="border-b dark:border-gray-700">
