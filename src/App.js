@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import Login from "./pages/Login";
 import Upload from "./pages/Upload";
-
+import Dashboard from "./pages/Dashboard";
 import Inventory from "./pages/Inventory";
 import BulkUpload from "./pages/BulkUpload";
 import Branch from "./pages/Branch";
@@ -29,7 +29,10 @@ function App() {
 
             <Route exact path="/Login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
 
-            <Route path="/upload" element={isAuthenticated ? <Upload /> : <Login setIsAuthenticated={setIsAuthenticated} />} />
+            <Route path="/dashboard" element={isAuthenticated ? <Dashboard /> : <Login setIsAuthenticated={setIsAuthenticated} />} />
+
+            {/* <Route path="/upload" element={isAuthenticated ? <Upload /> : <Login setIsAuthenticated={setIsAuthenticated} />} /> */}
+            <Route path="/upload" element={<Upload />} />
 
             <Route path="/bulkupload" element={<BulkUpload />} />
 
